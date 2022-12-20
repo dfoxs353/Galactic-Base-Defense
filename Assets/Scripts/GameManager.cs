@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
     public static GameManager _instance;
     public static GameManager Instance{get {return _instance;}}
 
+    public bool pause = false;
+
     public Menu_Manager MenuManager;
     public HUD_Manager HUDManager;
 
@@ -27,6 +29,12 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         InitializeMain();
+    }
+
+    public void menuPressed()
+    {
+        pause = !pause;
+        Debug.Log("Pause game");
     }
 
     private void InitializeMain()

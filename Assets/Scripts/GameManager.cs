@@ -29,12 +29,6 @@ public class GameManager : MonoBehaviour
         InitializeMain();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void InitializeMain()
     {
         MenuManager = GetComponent<Menu_Manager>();

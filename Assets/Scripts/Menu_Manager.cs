@@ -6,6 +6,6 @@ public class Menu_Manager : MonoBehaviour
 {
     public void PlayPressed()
     {
-        
+        Debug.Log("Play pressed");
     }
 }
